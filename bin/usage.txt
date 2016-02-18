@@ -1,0 +1,14 @@
+Usage: node-swagger-to-md <markdown>
+
+Options:
+  -h, --help        Output usage information
+  -v, --version     Output version number
+  -y, --yaml        Use swagger YAML instead of JSON
+
+Examples:
+  $ node-swagger-to-md README.md      # Transform swagger to markdown
+  $ node-swagger-to-md < README.md    # Transform swagger to markdown
+  $ node-swagger-to-md -y README.md   # Transform swagger yaml to markdown
+
+Docs: https://github.com/TabDigital/node-swagger-to-md
+Bugs: https://github.com/TabDigital/node-swagger-to-md/issues

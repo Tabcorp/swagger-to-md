@@ -1,0 +1,39 @@
+{
+  "name": "node-swagger-to-md",
+  "version": "1.0.0",
+  "description": "Transform swagger to markdown",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "TabDigital/node-swagger-to-md",
+  "keywords": [
+    "markdown",
+    "swagger",
+    "md",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cliclopts": "^1.1.1",
+    "concat-stream": "^1.5.1",
+    "minimist": "^1.2.0",
+    "virtual-dom": "^2.1.1",
+    "yamljs": "^0.2.5"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.5.1",
+    "istanbul": "^0.4.2",
+    "standard": "^6.0.5",
+    "tape": "^4.4.0"
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ],
+  "bin": {
+    "node-swagger-to-md": "./bin/cli.js"
+  }
+}

@@ -5,8 +5,21 @@
 Transform swagger to markdown.
 
 ## Usage
-```sh
-$ markdown-toc README.md | injectmd -t "toc" -i README.md
+```txt
+Usage: node-swagger-to-md <swagger>
+
+Options:
+  -h, --help        Output usage information
+  -v, --version     Output version number
+  -y, --yaml        Use swagger YAML instead of JSON
+
+Examples:
+  $ node-swagger-to-md spec.json      # Transform swagger to markdown
+  $ node-swagger-to-md < spec.json    # Transform swagger to markdown
+  $ node-swagger-to-md -y spec.yaml   # Transform swagger yaml to markdown
+
+Docs: https://github.com/TabDigital/node-swagger-to-md
+Bugs: https://github.com/TabDigital/node-swagger-to-md/issues
 ```
 
 ## Example output

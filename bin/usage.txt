@@ -1,4 +1,4 @@
-Usage: node-swagger-to-md <swagger>
+Usage: swagger-to-md <swagger>
 
 Options:
   -h, --help        Output usage information

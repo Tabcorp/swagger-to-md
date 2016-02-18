@@ -1,5 +1,5 @@
 {
-  "name": "node-swagger-to-md",
+  "name": "swagger-to-md",
   "version": "1.0.0",
   "description": "Transform swagger to markdown",
   "main": "index.js",
@@ -34,6 +34,6 @@
     "bin/*"
   ],
   "bin": {
-    "node-swagger-to-md": "./bin/cli.js"
+    "swagger-to-md": "./bin/cli.js"
   }
 }

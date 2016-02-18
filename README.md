@@ -6,7 +6,7 @@ Transform swagger to markdown.
 
 ## Usage
 ```txt
-Usage: node-swagger-to-md <swagger>
+Usage: swagger-to-md <swagger>
 
 Options:
   -h, --help        Output usage information
@@ -14,9 +14,9 @@ Options:
   -y, --yaml        Use swagger YAML instead of JSON
 
 Examples:
-  $ node-swagger-to-md spec.json      # Transform swagger to markdown
-  $ node-swagger-to-md < spec.json    # Transform swagger to markdown
-  $ node-swagger-to-md -y spec.yaml   # Transform swagger yaml to markdown
+  $ swagger-to-md spec.json      # Transform swagger to markdown
+  $ swagger-to-md < spec.json    # Transform swagger to markdown
+  $ swagger-to-md -y spec.yaml   # Transform swagger yaml to markdown
 
 Docs: https://github.com/TabDigital/node-swagger-to-md
 Bugs: https://github.com/TabDigital/node-swagger-to-md/issues
@@ -43,7 +43,7 @@ Bugs: https://github.com/TabDigital/node-swagger-to-md/issues
 
 ## Installation
 ```sh
-$ npm install node-swagger-to-md
+$ npm install swagger-to-md
 ```
 
 ## See Also

@@ -33,6 +33,9 @@ $ markdown-toc README.md | injectmd -t "toc" -i README.md
 $ npm install node-swagger-to-md
 ```
 
+## See Also
+- [injectmd](https://github.com/TabDigital/node-injectmd)
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 

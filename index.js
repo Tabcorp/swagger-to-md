@@ -15,7 +15,7 @@ function nodeSwaggerToMd (spec, opts) {
   assert.equal(typeof opts, 'object', 'opts is an object')
 
   if (opts.yaml) spec = yaml.parse(spec)
-  if (opts.json) spec = JSON.parse(spec)
+  else spec = JSON.parse(spec)
 
   assert.equal(typeof spec, 'object', 'spec is object')
 

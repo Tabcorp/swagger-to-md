@@ -18,7 +18,7 @@ produces:
 paths:
   /products:
     get:
-      summary: Product Types
+      summary: Product_Types
       description: |
         The Products endpoint returns information about the *Uber* products
         offered at a given location. The response includes the display name
@@ -52,7 +52,7 @@ paths:
             $ref: '#/definitions/Error'
   /estimates/price:
     get:
-      summary: Price Estimates
+      summary: Price_Estimates
       description: |
         The Price Estimates endpoint returns an estimated price range
         for each product offered at a given location. The price estimate is
@@ -102,7 +102,7 @@ paths:
             $ref: '#/definitions/Error'
   /estimates/time:
     get:
-      summary: Time Estimates
+      summary: Time_Estimates
       description: The Time Estimates endpoint returns ETAs for all products offered at a given location, with the responses expressed as integers in seconds. We recommend that this endpoint be called every minute to provide the most accurate, up-to-date ETAs.
       parameters:
         - name: start_latitude
@@ -141,7 +141,7 @@ paths:
             $ref: '#/definitions/Error'
   /me:
     get:
-      summary: User Profile
+      summary: User_Profile
       description: The User Profile endpoint returns information about the Uber user that has authorized with the application.
       tags:
         - User
@@ -156,7 +156,7 @@ paths:
             $ref: '#/definitions/Error'
   /history:
     get:
-      summary: User Activity
+      summary: User_Activity
       description: The User Activity endpoint returns data about a user's lifetime activity with Uber. The response will include pickup locations and times, dropoff locations and times, the distance of past requests, and information about which products were requested.<br><br>The history array in the response will have a maximum length based on the limit parameter. The response value count may exceed limit, therefore subsequent API requests may be necessary.
       parameters:
         - name: offset

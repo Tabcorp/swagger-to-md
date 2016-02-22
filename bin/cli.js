@@ -48,7 +48,7 @@ function runMain (rs, argv) {
 // print usage & exit
 // num? -> null
 function usage (exitCode) {
-  const rs = fs.createReadStream(__dirname + '/usage.txt')
+  const rs = fs.createReadStream(path.join(__dirname, '/usage.txt'))
   const ws = process.stdout
   rs.pipe(ws)
   ws.on('finish', process.exit.bind(null, exitCode))

@@ -1,0 +1,28 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Example",
+    "description": "API description",
+    "version": "1.0.0"
+  },
+  "host": "api.com",
+  "schemes": ["https"],
+  "basePath": "/v1",
+  "produces": ["application/json"],
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "Products",
+        "description": "Products description",
+        "parameters": [
+          { "name": "foo" },
+          { "name": "bar" }
+        ],
+        "responses": {
+          "200": {
+          }
+        }
+      }
+    }
+  }
+}

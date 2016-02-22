@@ -28,7 +28,7 @@ function nodeSwaggerToMd (spec, opts) {
   // convert swagger to table rows
   const body = Object.keys(spec.paths).reduce(function (arr, route) {
     Object.keys(spec.paths[route]).forEach(function (method) {
-      const summary = spec.paths[route][method].summary || '[ not available ]'
+      const summary = spec.paths[route][method].summary || ''
       arr.push(h('tr', [
         h('td', route),
         h('td', method.toUpperCase()),

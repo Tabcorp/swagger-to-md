@@ -25,16 +25,28 @@ function nodeSwaggerToMd (spec, opts) {
     h('td', 'Summary')
   ])
 
-  // convert swagger to table rows
-  const body = Object.keys(spec.paths).reduce(function (arr, route) {
+  const rawData = []
+
+  // extract relevant data from set
+  Object.keys(spec.paths).forEach(function (route) {
     Object.keys(spec.paths[route]).forEach(function (method) {
       const summary = spec.paths[route][method].summary || ''
-      arr.push(h('tr', [
-        h('td', route),
-        h('td', method.toUpperCase()),
-        h('td', summary)
-      ]))
+      rawData.push({ route: route, method: method, summary: summary })
     })
+  })
+
+  const sortedData = rawData.sort(function (a, b) {
+    if (a.route < b.route) return -1
+    if (a.route === b.route) return 0
+    return 1
+  })
+
+  const body = sortedData.reduce(function (arr, chunk) {
+    arr.push(h('tr', [
+      h('td', chunk.route),
+      h('td', chunk.method.toUpperCase()),
+      h('td', chunk.summary)
+    ]))
     return arr
   }, [])
 

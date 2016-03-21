@@ -5,8 +5,18 @@
     <td>Summary</td>
   </tr>
   <tr>
-    <td>/products</td>
+    <td>/baz</td>
     <td>GET</td>
-    <td>Products</td>
+    <td>baz</td>
+  </tr>
+  <tr>
+    <td>/v1/bar</td>
+    <td>GET</td>
+    <td>bar</td>
+  </tr>
+  <tr>
+    <td>/v1/foo</td>
+    <td>GET</td>
+    <td>foo</td>
   </tr>
 </table>

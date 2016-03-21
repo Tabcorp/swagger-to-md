@@ -5,11 +5,6 @@
     <td>Summary</td>
   </tr>
   <tr>
-    <td>/products</td>
-    <td>GET</td>
-    <td>Product_Types</td>
-  </tr>
-  <tr>
     <td>/estimates/price</td>
     <td>GET</td>
     <td>Price_Estimates</td>
@@ -20,13 +15,18 @@
     <td>Time_Estimates</td>
   </tr>
   <tr>
+    <td>/history</td>
+    <td>GET</td>
+    <td>User_Activity</td>
+  </tr>
+  <tr>
     <td>/me</td>
     <td>GET</td>
     <td>User_Profile</td>
   </tr>
   <tr>
-    <td>/history</td>
+    <td>/products</td>
     <td>GET</td>
-    <td>User_Activity</td>
+    <td>Product_Types</td>
   </tr>
 </table>

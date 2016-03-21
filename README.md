@@ -2,7 +2,7 @@
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
 [![downloads][8]][9] [![js-standard-style][10]][11]
 
-Transform swagger to markdown.
+Transform swagger to markdown. Output is sorted alphabetically.
 
 ## Usage
 ```txt

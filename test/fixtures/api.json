@@ -10,10 +10,38 @@
   "basePath": "/v1",
   "produces": ["application/json"],
   "paths": {
-    "/products": {
+    "/baz": {
       "get": {
-        "summary": "Products",
+        "summary": "baz",
         "description": "Products description",
+        "parameters": [
+          { "name": "foo" },
+          { "name": "bar" }
+        ],
+        "responses": {
+          "200": {
+          }
+        }
+      }
+    },
+    "/v1/bar": {
+      "get": {
+        "summary": "bar",
+        "description": "bar",
+        "parameters": [
+          { "name": "foo" },
+          { "name": "bar" }
+        ],
+        "responses": {
+          "200": {
+          }
+        }
+      }
+    },
+    "/v1/foo": {
+      "get": {
+        "summary": "foo",
+        "description": "foo",
         "parameters": [
           { "name": "foo" },
           { "name": "bar" }

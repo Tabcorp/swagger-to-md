@@ -24,6 +24,7 @@
     "yamljs": "^0.2.5"
   },
   "devDependencies": {
+    "bl": "^1.1.2",
     "dependency-check": "^2.5.1",
     "istanbul": "^0.4.2",
     "standard": "^6.0.5",
